@@ -1,7 +1,7 @@
 ---
-title:  Blog
-layout: default
+title:  Post
 order: 2
+layout: default
 
 ---
 

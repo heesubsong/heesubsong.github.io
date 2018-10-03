@@ -1,0 +1,6 @@
+- name: Email
+  icon: fa-envelope
+  link: mailto:close1021@gmail.com
+- name: Github
+  icon: fa-github
+  link: https://github.com/heesubsong

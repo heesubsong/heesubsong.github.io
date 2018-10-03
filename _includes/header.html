@@ -7,7 +7,7 @@
   {% assign subtitle = site.description %}
 {% endif %}
 {% if page.layout == "post" %}
-  {% assign title = "Blog" %}
+  {% assign title = "post" %}
 {% endif %}
 
 <section id="headerbox" class="d-flex flex-row {% if page.layout == "home" %}fullwindow{% else %}banner{% endif %}">
@@ -18,7 +18,7 @@
       <span class="site-description">{{subtitle}}</span>
     </h1>
     
-    
+    <!--
     <ul class="list-inline header-icons">         
       {% for social in site.data.sociallinks %}
       <li class="list-inline-item">
@@ -32,7 +32,7 @@
       </li>
       {% endfor %}
     </ul>
-    
+    -->
     
     <div class="header-links">
       <!--<a class="link" href="#about" data-scroll>About Me</a>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<h2 class="my-0 py-0">{{page.title}}</h2>
+<h3 class="my-0 py-0">{{page.date | date: '%B %d, %Y' }}</h3>
+<h4 class="mt-0 mb-5 py-0">{% if page.tags %}tags: <span class="text-primary">{{ page.tags | join: ' · ' }}</span>{% endif %}</h4>
+
+<div class="mb-5">{{content}}</div>
+
+<hr/>
+
+<div class="resume-item d-flex flex-column flex-sm-row mb-5">
+  <div class="mr-auto">
+    {% if page.previous.url %}
+    <a href="{{page.previous.url | relative_url}} ">Previous Post</a>
+    {% endif %}
+
+  </div>
+  <div>
+    {% if page.next.url %}
+    <a href="{{page.next.url | relative_url}} ">Next Post</a>
+    {% endif %}
+  </div>
+</div>

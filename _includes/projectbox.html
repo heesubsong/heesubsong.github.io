@@ -1,0 +1,22 @@
+<!-- /_includes/projectbox.html -->
+
+<div class="p-1 p-lg-4 project-box">
+  <div class="d-flex flex-column flex-md-row mb-1">
+    <div class=" mr-auto">
+      <h3 class="my-0 py-0"><a href="{{item.link}}">{{ item.title }}{% if item.link!=null %} »{% endif %}</a></h3>
+      <h4 class="my-0 py-0">{{item.description}}</h4>
+      <h5 class="my-0 py-0"><em>{{ item.tags | join: ' · ' }}</em></h5>
+    </div>
+    <div class="text-md-right">
+      {{ item.date | date: "%Y"}}
+    </div>
+  </div>
+  <div class="d-flex flex-column flex-md-row mb-3">
+    <div class="mr-auto">
+      {{ item.content }}
+    </div>
+  </div>
+</div>
+
+<!-- end /_includes/projectbox.html -->
+

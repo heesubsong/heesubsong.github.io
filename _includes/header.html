@@ -1,0 +1,74 @@
+<!-- _includes/header.html -->
+
+{% assign title = page.title %}
+{% assign subtitle = site.title %}
+{% if page.layout == "home" %}
+  {% assign title = site.title %}
+  {% assign subtitle = site.description %}
+{% endif %}
+{% if page.layout == "post" %}
+  {% assign title = "Blog" %}
+{% endif %}
+
+<section id="headerbox" class="d-flex flex-row {% if page.layout == "home" %}fullwindow{% else %}banner{% endif %}">
+	<div id="particles-js"></div>
+  <div class="header p-2 px-md-5 m-auto">
+    <h1 class="m-0 p-0">
+      <span class="site-title">{{title}}</span>
+      <span class="site-description">{{subtitle}}</span>
+    </h1>
+    
+    
+    <ul class="list-inline header-icons">         
+      {% for social in site.data.sociallinks %}
+      <li class="list-inline-item">
+        <a href="{{social.link}}">
+          <span class="hi fa-stack fa-2x">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="hv fa fa-circle fa-stack-2x"></i>
+            <i class="sh fa {{social.icon}} fa-stack-1x"></i>
+          </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    
+    
+    <div class="header-links">
+      <!--<a class="link" href="#about" data-scroll>About Me</a>
+      <a class="link" href="#projects" data-scroll>Projects</a>-->
+      
+      {% assign sorted_pages = site.pages | sort:"order" %}
+			{% for p in sorted_pages %}
+      {% if p.title!=null %}
+      {% if p.order!=null %}
+	    			{% if p.title == page.title %}
+					<a class="link" href="#content" data-scroll>{{ p.title }}</a>
+	    			{% else %}
+					<a class="link" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+	    			{% endif %}
+      {% endif %}
+      {% endif %}
+			{% endfor %}
+      
+      
+    </div>
+{% if page.layout == "home" %}
+  <a class="down" href="#content" data-scroll>
+    <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
+  </a>
+{% endif %}
+
+</div>
+
+</section>
+
+<section id="content" class="d-flex fullwindow py-2">
+  <div class="m-auto p-2 p-md-5" style="max-width:84em">
+	  <!-- content -->
+	{{content}}	
+	  <!-- end content -->
+  </div>
+</section>
+
+<!-- end _includes/header.html -->

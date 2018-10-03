@@ -3,6 +3,9 @@
   {% include head.html %}
   <body>
       {% include header.html %}
+    
+    
+    {% comment %}
       <section id="about">
         {% include about.html %}
       </section>
@@ -10,5 +13,8 @@
         {% include projects.html %}
       </section>
         {{ content }}
+    {% endcomment %}
+    
+    
       {% include footer.html %}
   </body>

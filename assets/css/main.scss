@@ -1,0 +1,18 @@
+---
+---
+
+@import "lib/normalize.scss";
+@import "lib/fontawesome.scss";
+@import "lib/devicon.scss";
+
+@import 'base.scss';
+@import 'vars.scss';
+@import 'animation.scss';
+@import 'header.scss';
+@import 'about.scss';
+@import 'projects.scss';
+@import 'footer.scss';
+
+@import 'bootstrapoverrides.scss';
+
+@import 'custom.scss';

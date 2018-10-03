@@ -14,7 +14,7 @@ title: About Me
 	<div class="p-lg-1 mx-lg-3 sepbar"></div>
 	
   <p class="p-1 pl-lg-4">
-I am a robotics and mechanical engineer in the aerospace industry. I am also interested in mechatronics, microcontrollers, embedded systems, IoT devices, software, and web-development.
+test.
 </p>
 </div>
 
@@ -50,7 +50,7 @@ I am a robotics and mechanical engineer in the aerospace industry. I am also int
 
   <div class="m-auto">
 		<h1 class="m-0 p-3 text-center" style="min-width:7em">
-			<a href="blog.html">Latest Posts</a>
+			<a href="post.html">Latest Posts</a>
 		</h1>
 	</div>
 

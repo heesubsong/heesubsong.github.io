@@ -14,7 +14,9 @@ title: About Me
 	<div class="p-lg-1 mx-lg-3 sepbar"></div>
 	
   <p class="p-1 pl-lg-4">
-test
+
+  {% include about.html %}
+
 </p>
 </div>
 
@@ -34,10 +36,8 @@ test
 
     {% assign sorted = site.projects | reverse %}
     {% for project in sorted %}
-    {% if project.featured %}
-      {% assign item = project %}
-      {% include projectbox.html %}
-    {% endif %}
+    {% assign item = project %}
+    {% include projectbox.html %}
     {% endfor %}
 
   </div>

@@ -1,7 +1,7 @@
 ---
 title:  Post
-order: 2
 layout: default
+order: 2
 
 ---
 

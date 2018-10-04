@@ -14,7 +14,7 @@ title: About Me
 	<div class="p-lg-1 mx-lg-3 sepbar"></div>
 	
   <p class="p-1 pl-lg-4">
-test.
+test
 </p>
 </div>
 
